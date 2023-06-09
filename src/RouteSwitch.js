@@ -6,6 +6,7 @@ import Dont from './Dont';
 import Stop from './Stop';
 import Me from './Me';
 import Now from './Now';
+import NotFound from './NotFound';
 
 const RouteSwitch = () => {
   return (
@@ -29,6 +30,7 @@ const RouteSwitch = () => {
           <Route path='/stop' element={<Stop />} />
           <Route path='/me' element={<Me />} />
           <Route path='/now' element={<Now />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
